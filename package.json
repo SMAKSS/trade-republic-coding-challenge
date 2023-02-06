@@ -1,0 +1,40 @@
+{
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "vue": "^3.2.41",
+    "vue-router": "4",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@types/node": "^18.11.5",
+    "@vitejs/plugin-vue": "^3.1.2",
+    "@vue/runtime-core": "^3.2.47",
+    "@vue/test-utils": "^2.2.10",
+    "@vue/vue3-jest": "^29.2.2",
+    "add": "^2.0.6",
+    "babel-jest": "^29.4.1",
+    "concurrently": "^7.5.0",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.8",
+    "vue-tsc": "^1.0.9",
+    "ws": "^8.10.0",
+    "yarn": "^1.22.19"
+  },
+  "name": "trade-republic-challenge",
+  "private": true,
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build",
+    "dev": "concurrently \"node server.mjs\" \"vite\"",
+    "preview": "concurrently \"node server.mjs\" \"vite preview\"",
+    "test": "jest"
+  },
+  "version": "0.1.1"
+}
